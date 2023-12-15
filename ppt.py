@@ -7,7 +7,7 @@ class Jogo:
 	
 	def __init__(self, raiz):
 		self.raiz = raiz
-		Label(self.raiz, text='Jogo pedra papel tesoura').grid(row= 1, column=1	,padx=10, pady=10, columnspan=3)
+		Label(self.raiz, text='Jogo Pedra Papel Tesoura',font=('arial',15,'bold')).grid(row= 1, column=1	,padx=10, pady=10, columnspan=3)
 		self.b1 = Button(self.raiz,text='PEDRA',width=10, command= self.pedra, bg='#FFA12D')		
 		self.b1.grid(row='2',column=1, padx=10, pady=10, sticky=NSEW)
 		self.b2 = Button(self.raiz, text='PAPEL',width=10, command= self.papel, bg='#FFA12D')
